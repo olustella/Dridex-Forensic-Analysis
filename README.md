@@ -1,20 +1,20 @@
 # Forensic Analysis: Multi-Stage Dridex/Ursnif Infection (Host 10.11.27.101)
 
 ## 📌 Executive Summary
-This project details a high-fidelity forensic investigation into a compromised internal host (**10.11.27.101**). The investigation confirmed a multi-stage attack chain where an initial **Ursnif (Gozi)** loader facilitated the delivery of the **Dridex banking Trojan**. The analysis covers network traffic triage, protocol anomaly detection, and artifact extraction using industry-standard tools.
+This project details a high fidelity forensic investigation into a compromised internal host (**10.11.27.101**). The investigation confirmed a multi-stage attack chain where an initial **Ursnif (Gozi)** loader facilitated the delivery of the **Dridex banking Trojan**. The analysis covers network traffic triage, protocol anomaly detection, and artifact extraction using industry-standard tools.
 
 ## 🛠️ Tools & Environment
 * **Platform:** Kali Linux (VirtualBox Environment)
-* **Traffic Analysis:** Wireshark, Zui (Brim)
+* **Traffic Analysis:** Wireshark
 * **Intelligence:** Cisco Talos, VirusTotal, AbuseIPDB
 * **Evidence Source:** `traffic-with-dridex-infection.pcap`
 
 ---
 
-## 🔍 Investigation Methodology (Multi-Layered Framework)
+## 🔍 Investigation Methodology (Multi Layered Framework)
 
 ### LAYER 1: Initial Triage & Traffic Volumetrics
-The investigation began by identifying high-risk external communicators. Analysis of the **Endpoints** window revealed heavy data exfiltration and payload delivery patterns.
+The investigation began by identifying high risk external communicators. Analysis of the **Endpoints** window revealed heavy data exfiltration and payload delivery patterns.
 
 ![Endpoint Traffic Analysis](Screenshots/traffic_endpoints.jpg)
 *Figure 1: Wireshark Endpoints listing malicious IPs 95.181.198.231 and 185.244.150.230.*
